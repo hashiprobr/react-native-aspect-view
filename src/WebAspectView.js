@@ -8,25 +8,23 @@ export default function WebAspectView(props) {
 
     function onLayout({ nativeEvent }) {
         const style = { ...props.style };
-        if ('flexBasis' in style) {
-            const parentStyle = getComputedStyle(nativeEvent.target.parentElement);
-            if (parentStyle['flex-direction'] === 'column') {
-                setColumn(true);
-                setBasis(nativeEvent.layout.height);
-            } else {
+        if ('width' in style) {
+            if (!('height' in style)) {
                 setColumn(false);
                 setBasis(nativeEvent.layout.width);
             }
         } else {
-            if ('width' in style) {
-                if (!('height' in style)) {
-                    setColumn(false);
-                    setBasis(nativeEvent.layout.width);
-                }
+            if ('height' in style) {
+                setColumn(true);
+                setBasis(nativeEvent.layout.height);
             } else {
-                if ('height' in style) {
+                const parentStyle = getComputedStyle(nativeEvent.target.parentElement);
+                if (parentStyle['flex-direction'] === 'column') {
                     setColumn(true);
                     setBasis(nativeEvent.layout.height);
+                } else {
+                    setColumn(false);
+                    setBasis(nativeEvent.layout.width);
                 }
             }
         }

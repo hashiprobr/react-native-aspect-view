@@ -22,3 +22,62 @@ Install
 ```
 npm install @hashiprobr/react-native-aspect-view
 ```
+
+
+Props
+-----
+
+|-------|----------------------------------------------|
+| ratio | a number representing the width/height ratio |
+
+
+Example
+-------
+
+Square view:
+
+``` js
+import { Text } from 'react-native';
+
+import AspectView from '@hashiprobr/react-native-aspect-view';
+
+export default function MyComponent() {
+    return (
+        <AspectView ratio={1}>
+            <Text>hello world</Text>
+        </AspectView>
+    );
+}
+```
+
+Width larger than height:
+
+``` js
+import { Text } from 'react-native';
+
+import AspectView from '@hashiprobr/react-native-aspect-view';
+
+export default function MyComponent() {
+    return (
+        <AspectView ratio={4 / 3}>
+            <Text>hello world</Text>
+        </AspectView>
+    );
+}
+```
+
+Height larger than width:
+
+``` js
+import { Text } from 'react-native';
+
+import AspectView from '@hashiprobr/react-native-aspect-view';
+
+export default function MyComponent() {
+    return (
+        <AspectView ratio={3 / 4}>
+            <Text>hello world</Text>
+        </AspectView>
+    );
+}
+```

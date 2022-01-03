@@ -27,6 +27,7 @@ npm install @hashiprobr/react-native-aspect-view
 Props
 -----
 
+| name  | description                                  |
 |-------|----------------------------------------------|
 | ratio | a number representing the width/height ratio |
 
@@ -59,7 +60,7 @@ import AspectView from '@hashiprobr/react-native-aspect-view';
 
 export default function MyComponent() {
     return (
-        <AspectView ratio={4 / 3}>
+        <AspectView ratio={4/3}>
             <Text>hello world</Text>
         </AspectView>
     );
@@ -75,7 +76,7 @@ import AspectView from '@hashiprobr/react-native-aspect-view';
 
 export default function MyComponent() {
     return (
-        <AspectView ratio={3 / 4}>
+        <AspectView ratio={3/4}>
             <Text>hello world</Text>
         </AspectView>
     );

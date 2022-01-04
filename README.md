@@ -31,6 +31,8 @@ Props
 |-------|----------------------------------------------|
 | ratio | a number representing the width/height ratio |
 
+Plus all [standard props of View](https://reactnative.dev/docs/view#props).
+
 
 Example
 -------

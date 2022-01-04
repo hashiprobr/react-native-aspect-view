@@ -27,11 +27,11 @@ npm install @hashiprobr/react-native-aspect-view
 Props
 -----
 
-| name  | description                                  |
-|-------|----------------------------------------------|
-| ratio | a number representing the width/height ratio |
+| name  | description                                                |
+|-------|------------------------------------------------------------|
+| ratio | a number representing the width/height ratio (default `1`) |
 
-Plus all [standard props of View](https://reactnative.dev/docs/view#props).
+[...View props](https://reactnative.dev/docs/view#props)
 
 
 Example

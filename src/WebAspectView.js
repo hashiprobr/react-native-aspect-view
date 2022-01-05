@@ -124,6 +124,8 @@ export default function WebAspectView(props) {
         }
     }
 
+    delete style.aspectRatio;
+
     return (
         <View
             {...props}

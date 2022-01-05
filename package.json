@@ -1,6 +1,6 @@
 {
   "name": "@hashiprobr/react-native-aspect-view",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A React Native View that keeps an aspect ratio in all platforms",
   "keywords": [
     "JavaScript",
@@ -27,6 +27,6 @@
   },
   "peerDependencies": {
     "react": "^17.0.0",
-    "react-native": "^0.64.0"
+    "react-native": ">=0.64.0"
   }
 }

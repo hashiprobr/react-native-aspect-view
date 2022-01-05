@@ -19,8 +19,40 @@ to emulate the behavior.
 Install
 -------
 
+With npm:
+
 ```
 npm install @hashiprobr/react-native-aspect-view
+```
+
+With yarn:
+
+```
+yarn add @hashiprobr/react-native-aspect-view
+```
+
+If using Expo, add the module to `webpack.config.js`:
+
+``` js
+const createExpoWebpackConfigAsync = require('@expo/webpack-config');
+
+module.exports = async function (env, argv) {
+    const config = await createExpoWebpackConfigAsync({
+        ...env,
+        babel: {
+            dangerouslyAddModulePathsToTranspile: [
+                '@hashiprobr/react-native-aspect-view',
+            ]
+        },
+    }, argv);
+    return config;
+};
+```
+
+If `webpack.config.js` does not exist, create it with:
+
+```
+expo customize:web
 ```
 
 

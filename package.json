@@ -1,7 +1,7 @@
 {
   "name": "@hashiprobr/react-native-aspect-view",
   "version": "1.0.11",
-  "description": "A React Native View that keeps an aspect ratio in all platforms",
+  "description": "A React Native View that keeps a consistent aspect ratio in all platforms",
   "keywords": [
     "JavaScript",
     "React",

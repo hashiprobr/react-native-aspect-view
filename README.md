@@ -16,6 +16,17 @@ and iOS but does not use `aspect-ratio` in the web. Instead, it uses `onLayout`
 to emulate the behavior.
 
 
+Peer dependencies
+-----------------
+
+``` json
+{
+    "react": "^17.0.1",
+    "react-native": ">=0.64.3"
+}
+```
+
+
 Install
 -------
 
@@ -42,7 +53,7 @@ module.exports = async function (env, argv) {
         babel: {
             dangerouslyAddModulePathsToTranspile: [
                 '@hashiprobr/react-native-aspect-view',
-            ]
+            ],
         },
     }, argv);
     return config;

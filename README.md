@@ -1,6 +1,11 @@
 react-native-aspect-view
 ========================
 
+**THIS REPOSITORY IS CLOSED** because
+[react-native-web](https://github.com/necolas/react-native-web) now [supports
+the aspect-ratio](https://github.com/necolas/react-native-web/issues/427)
+property.
+
 **A React Native View that keeps a consistent aspect ratio in all platforms**
 
 React Native offers the [`aspectRatio` layout
